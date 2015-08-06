@@ -1,8 +1,10 @@
 'use strict';
 
-angular.module('app', [])
-  .controller('MainController', function() {
-  var first = this;
+angular.module('App.controllers', [])
+    .controller('MainController', ['$scope', function($scope) {
+            $scope.main.name = 'test';
 
-  first.name = 'test';
-});
+            var tabs = ['About', 'Projects', 'Resume'];
+
+            $scope.main.tabs = tabs;
+        }]);
