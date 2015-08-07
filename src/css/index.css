@@ -1,0 +1,17 @@
+.container {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.projects div {
+    margin: 5px;
+    padding: 5px;
+}
+
+.meta--container {
+    padding: 20px;
+}
+
+[role="tabpanel"] {
+    transition: none;
+}

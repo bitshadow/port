@@ -4,7 +4,7 @@ angular.module('App.controllers', [])
     .controller('MainController', ['$scope', function($scope) {
             $scope.main.name = 'test';
 
-            var tabs = ['About', 'Projects', 'Resume'];
+            var tabs = ['about', 'projects', 'resume'];
 
             $scope.main.tabs = tabs;
         }]);
