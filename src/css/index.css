@@ -25,7 +25,7 @@ body {
 
 a {
     cursor: pointer;
-    color: #78CEC5;
+    color: #10CDC1;
 }
 
 .info a {
@@ -34,8 +34,13 @@ a {
     font-size: 15px;
 }
 
-.projects a:hover {
-    color: #FF4081;
+.projects a {
+    color: rgba(0,0,0,0.54);
+}
+
+.info a:hover, .projects a:hover {
+    color: #10CDC1;
+    /*color: #FF4081;*/
 }
 
 .container {
