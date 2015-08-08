@@ -7,6 +7,7 @@
     <title>Jignesh Kakadiya Portfolio</title>
     <meta name="description" content="Jignesh Kakadiya Portfolio">
     <meta name="viewport" content="initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="src/css/index.css">
 
@@ -22,10 +23,14 @@
 <body>
     <div ng-controller="MainController as main">
         <md-content class="container">
+            <div class="name">
+                <div>
+                    <div class="logo"></div>
+                </div>
+                <h3>FULLSTACK WEB DEVELOPER</h3>
+            </div>
           <md-tabs md-dynamic-height md-border-bottom md-selected="selectedIndex">
-            <md-tab ng-repeat="tab in main.tabs">
-                <md-tab-label><span ui-sref="{{tab}}">{{tab}}</span></md-tab-label>
-            </md-tab>
+            <md-tab ng-repeat="tab in main.tabs" ui-sref="{{tab}}">{{tab}}</md-tab>
           </md-tabs>
           <div ui-view layout layout-align="center" class="meta--container"> </div>
         </md-content>

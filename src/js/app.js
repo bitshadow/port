@@ -13,8 +13,12 @@ angular.module('App', ['ui.router', 'ngMaterial', 'App.controllers'])
                 url: '/projects',
                 templateUrl: 'partials/projects.html'
             })
-            .state('resume', {
-                url: '/resume',
-                templateUrl: 'partials/resume.html'
+            .state('skills', {
+                url: '/skills',
+                templateUrl: 'partials/skills.html'
+            })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'partials/contact.html'
             });
     });
