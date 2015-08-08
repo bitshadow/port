@@ -8,6 +8,7 @@ angular.module('App', ['ui.router', 'ngMaterial', 'App.controllers'])
             .state('projects', {
                 url: '/projects',
                 templateUrl: 'partials/projects.html',
+                controller: 'ProjectsController'
             })
             .state('about', {
                 url: '/about',

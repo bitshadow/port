@@ -1,10 +1,7 @@
 <div class="about">
     <div class="info about--info">
-        I live in <span class="highlight">Bangalore</span> and work at
-        <a href="{{work.url}}" target="new">{{work.name}}.</a>
-        <div>When I am free I hack on Open Source projects.
-            <a target="new" ng-repeat="org in contributions" href="{{org.url}}">{{org.key}}{{org.next}}</a>
-        </div>
+        I live in <span class="highlight">Bangalore</span>, work at
+        <a href="{{work.url}}" target="new">{{work.name}}</a> and contribute to <a ui-sref="projects">Open Source.</a>
     </div>
 
     <div class="contacts about--contacts">

@@ -1,20 +1,12 @@
 <div class="projects">
-    <article class="list-item projects--item">
-        <span>iconate.js</span>
+    <article ng-repeat="proj in projects">
+        <a target="new" href="{{proj.url}}">{{proj.key}}</a>
     </article>
-    <article class="list-item projects--item">
-        <span>Slate</span>
+    <article>
+        <a target="new" href="https://github.com/bitshadow">and more...</a>
     </article>
-    <article class="list-item projects--item">
-        <span>Scrollpad</span>
-    </article>
-    <article class="list-item projects--item">
-        <span>Organizations</span>
-    </article>
-    <article class="list-item projects--item">
-        <span>ChitChat</span>
-    </article>
-    <article class="list-item projectsitem">
-        <span>Jemblem</span>
+    <h2>Open Source</h2>
+    <article ng-repeat="org in contributions">
+        <a target="new" href="{{org.url}}">{{org.key}}</a>
     </article>
 </div>

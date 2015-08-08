@@ -11,7 +11,7 @@
 
 
 html {
-    font: 100%/1.5 "Roboto", Verdana, sans-serif;
+    font: 110%/1.8 monospace;
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     width: 100%;
@@ -32,6 +32,10 @@ a {
     color: rgba(0,0,0,0.54);
     font-weight: bold;
     font-size: 15px;
+}
+
+.projects a:hover {
+    color: #FF4081;
 }
 
 .container {
