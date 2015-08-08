@@ -23,8 +23,14 @@ body {
     color: rgba(0,0,0,0.54)
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #78CEC5;
+}
+
 .container {
-    width: 500px;
+    width: 380px;
     margin: 20px auto;
     text-align: center;
 }
@@ -57,7 +63,39 @@ body {
 }
 
 .list-item {
-    padding: 15px;
+    margin: 10px 0;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.icons {
+    margin-top: 5px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.icons a {
+    margin: 0 10px;
+}
+
+.twitter:hover {
+    color: #2884A2;
+}
+
+.linkedin:hover {
+    color: #1D87BD;
+}
+
+.github:hover {
+    color: #333;
+}
+
+.gmail:hover {
+    color: #E24A3F;
 }
 
 .logo {
