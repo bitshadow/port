@@ -24,9 +24,14 @@ body {
 }
 
 a {
-    text-decoration: none;
     cursor: pointer;
     color: #78CEC5;
+}
+
+.info a {
+    color: rgba(0,0,0,0.54);
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .container {
@@ -66,12 +71,8 @@ a {
     margin: 10px 0;
 }
 
-.about {
-    margin-bottom: 30px;
-}
-
-.icons {
-    margin-top: 5px;
+.contacts {
+    margin-top: 30px;
 }
 
 .highlight {

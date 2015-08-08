@@ -2,15 +2,16 @@
 
 angular.module('App', ['ui.router', 'ngMaterial', 'App.controllers'])
     .config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/projects');
+        $urlRouterProvider.otherwise('/about');
 
         $stateProvider
             .state('projects', {
                 url: '/projects',
-                templateUrl: 'partials/projects.html'
+                templateUrl: 'partials/projects.html',
             })
-            .state('contact', {
-                url: '/contact',
-                templateUrl: 'partials/contact.html'
+            .state('about', {
+                url: '/about',
+                templateUrl: 'partials/about.html',
+                controller: 'AboutController'
             });
     });

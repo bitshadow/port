@@ -1,0 +1,18 @@
+<div class="about">
+    <div class="info about--info">
+        I live in <span class="highlight">Bangalore</span> and work at
+        <a href="{{work.url}}" target="new">{{work.name}}.</a>
+        <div>when I am free I contribute to Open Source projects.
+            <a target="new" ng-repeat="org in contributions" href="{{org.url}}">{{org.key}}{{org.next}}</a>
+        </div>
+    </div>
+
+    <div class="contacts about--contacts">
+        <small>Get in touch. I come here often.</small>
+        <div class="icons contacts--icons">
+            <a ng-repeat="contact in contacts" class="{{contact.type}}" href="{{contact.url}}" target="new">
+                <i class="fa fa-2x {{contact.icon}}"></i>
+            </a>
+        </div>
+    </div>
+</div>
