@@ -9,7 +9,6 @@
     box-sizing: border-box;
 }
 
-
 html {
     font: 110%/1.8 monospace;
     background-color: #fff;
@@ -20,7 +19,7 @@ html {
 }
 
 body {
-    color: rgba(0,0,0,0.54)
+    color: rgba(0, 0, 0, 0.54)
 }
 
 a {
@@ -29,16 +28,17 @@ a {
 }
 
 .info a {
-    color: rgba(0,0,0,0.54);
+    color: rgba(0, 0, 0, 0.54);
     font-weight: bold;
     font-size: 15px;
 }
 
 .projects a {
-    color: rgba(0,0,0,0.54);
+    color: rgba(0, 0, 0, 0.54);
 }
 
-.info a:hover, .projects a:hover {
+.info a:hover,
+.projects a:hover {
     color: #10CDC1;
     /*color: #FF4081;*/
 }
@@ -53,7 +53,8 @@ a {
     padding: 5px;
 }
 
-.name div, .name h3 {
+.name div,
+.name h3 {
     margin: 0 auto;
     cursor: default;
     font-weight: 400;
@@ -72,7 +73,7 @@ a {
     margin: 30px 0;
 }
 
-.meta--container {
+.container--meta {
     padding: 20px;
 }
 
@@ -115,7 +116,21 @@ a {
     height: 100px;
 }
 
-
 [role="tabpanel"] {
     transition: none;
+}
+
+.fade.ng-enter {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+
+.fade.ng-enter {
+    opacity: 0;
+}
+
+.fade.ng-enter.ng-enter-active {
+    opacity: 1;
 }
